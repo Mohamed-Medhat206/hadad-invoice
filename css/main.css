@@ -1,0 +1,315 @@
+
+.header #img1{
+    width: 20%;
+}
+
+.header{
+    display: flex;
+    justify-content: space-around;
+    margin:0px 20px;
+    direction: rtl;
+}
+.contact img{
+    width: 20px;
+    height: 20px;
+    display: block;
+    margin: 14px;
+}
+.contact{
+    display: flex;
+    /* margin-top: 30px; */
+}
+hr:first-child{
+    width:90%;
+    border-bottom: 8px solid;
+    color: rgb(34, 82, 213);
+}
+hr:nth-child(2){
+    width: 50%;
+    border-top: 15px solid;
+    color: rgb(34, 82, 213);
+    border-bottom-right-radius: 50px;
+    border-bottom-left-radius: 50px;
+    margin-top: -10px;
+}
+hr:nth-child(4){
+    border: 1px solid rgb(209, 222, 222);
+    width: 70%;
+}
+
+table{
+    border: 2px solid rgb(209, 222, 222);
+    border-collapse: collapse;
+    width: 80%;
+    margin: 20px 10%;
+    direction: rtl;
+    font-size: 15px;
+    font-family: 'Droid Arabic Naskh';
+    font-weight: bold;
+}
+th{
+    padding: 5px 0px 5px;
+    background-color: rgb(34, 82, 213);
+    text-align: start;
+    color:white;
+
+}
+
+.foot{
+    display: flex;
+    justify-content: space-around;
+    color: white;
+    background-color:rgb(34, 82, 213) ;
+    padding: 10px;
+    width: 90%;
+    margin-left: 50px;
+}
+th:first-child,
+th:nth-child(4),
+th:nth-child(7)
+{
+    width: 50px;
+}
+
+td {
+    border-top: 2px solid rgb(209, 222, 222);
+padding: 5px;
+width: 50px;
+text-align: start;
+}
+td img{
+    width: 30%;
+    margin: 0px;
+}
+td input{
+    font-size: 20px;
+    font-weight: bold;
+    text-align: left;
+    margin: 10px;
+    border-radius: 10px;
+    padding: 10px;
+}
+td input:hover{
+background-color: aqua;
+}
+h3{
+    text-align: center;
+    margin: 0px;
+}
+
+.main .data{
+    direction: rtl;
+    display: flex;
+    line-height: 2;
+    margin-right: 300px;
+    justify-content: space-between;
+    width: 55%;
+}
+
+.main .data .details{
+    margin: 0px;
+}
+.main .data .js{
+    margin:0% 0% 0% 40%;
+    background-color: rgb(209, 222, 222);
+    border-radius: 20px;
+    padding: 0px 15px;
+    height: fit-content;
+}
+
+.container_1{
+    display: flex;
+    justify-content: space-between;
+    margin: 10px 10%;
+    border: 3px solid rgb(209, 222, 222);
+    padding: 0px 20px;
+    line-height: 1.5;
+    direction: rtl;
+    width: 77%;
+
+}
+.container{
+    display: flex;
+    margin: 10px 10%;
+    border: 3px solid rgb(209, 222, 222);
+    padding: 0px 20px;
+    line-height: 1.5;
+    width: 77%;
+    justify-content: space-between;
+}
+.arab{
+    direction: rtl;
+}
+.eng{
+    margin-right: 50px;
+}
+
+.main .container_1 .left{
+    margin: -10px ;
+    border-left:2px solid rgb(209, 222, 222);    
+    height: 100px;
+}
+.main .contact_1{
+    margin: 218px 50px;
+
+}
+
+.tables{
+    display: flex;
+    width: 80%;
+    justify-content: start;
+    margin: 0px 0% 0px 10%;
+    direction: rtl;
+}
+.tables img{
+    width: 100px;
+}
+.tables table{
+    border: 2px solid rgb(209, 222, 222);
+    border-collapse: collapse;
+    width: calc(100%/3);
+    margin: 0px 1%;
+    direction: rtl;
+    font-size: 15px;
+    font-family: 'Droid Arabic Naskh';
+    font-weight: bold;
+}
+
+
+
+
+
+
+
+
+
+@media (max-width: 1050px) {
+    .main .data{
+        direction: rtl;
+        display: flex;
+        line-height: 2;
+        margin: 0px 80px;
+        justify-content: space-between;
+        flex-direction: column;
+    }
+    .main .js{
+        width: 40%;
+        text-align: center;
+    }
+}
+
+
+@media (max-width: 935px) {
+    .tables{
+        flex-direction: column;
+    }
+    .tables table{
+        width: 100%;
+        margin: 10px 0px;
+    }
+}
+@media (max-width: 590px) {
+    .header {
+        flex-direction: row;
+        margin: 0px;
+        width: 100%;
+        margin: 0px;
+    }
+    
+    .contact_1 p.right {
+        width: 30%;
+        padding: 20px;
+    }
+    .contact_1 p.bet {
+        width: 55%;
+    }
+    .main .data{
+        direction: rtl;
+        display: flex;
+        line-height: 2;
+        margin: 0px 80px;
+        justify-content: space-between;
+        flex-direction: column;
+    }
+    .main .js{
+        width: 40%;
+        text-align: center;
+    }
+    .main .container,.container_1{
+        display: flex;
+        justify-content: space-between;
+        margin: 10px 5% ;
+        border: 3px solid rgb(209, 222, 222);
+        padding: 0px 20px;
+        line-height: 1.5;
+        width: 80%;
+    }
+}
+
+
+
+@media (max-width: 460px) {
+   
+    .header {
+        flex-direction: column;
+        margin: 0px;
+        width: 70%;
+        margin: 0px;
+    }
+    .header #img1{
+        margin: 0px;
+        width: 50%;
+
+    }
+    .contact_1 .right {
+        width: 30%;
+        padding: 20px;
+    }
+    .contact_1 .bet p{
+        width: 55%;
+    }
+    .foot{
+        margin-left: 10px;
+    }
+    table{
+        border: 3px solid rgb(209, 222, 222);
+        border-collapse: collapse;
+        width: 85%;
+        margin: 20px 30px;
+        direction: rtl;
+        font-size: 15px;
+        font-family: 'Droid Arabic Naskh';
+        font-weight: bold;
+    }
+    .footer{
+        margin: 62px 0px 0px;
+        width: 101%;
+
+    }
+    .main .data{
+        direction: rtl;
+        display: flex;
+        line-height: 2;
+        margin: 0px 80px;
+        justify-content: space-between;
+        flex-direction: column;
+    }
+    .main .js{
+        width: 40%;
+        text-align: center;
+    }
+    .main .container,.container_1{
+        margin: 10px 5% ;
+    }
+    h1:nth-child(3){
+        height: 35px;
+}   
+
+.main .data .js{
+    margin-right: 15%;
+}
+th{
+    padding: 5px 0px 5px;
+}
+
+}
